@@ -7,5 +7,7 @@ public class FishTank06 {
     private String lastWaterChange;
     private String waterQuality;
 
+
     //TODO: en veil fisk
+
 }
