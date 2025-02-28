@@ -7,16 +7,23 @@ public class FishTank06 {
     private String lastWaterChange;
     private String waterQuality;
 
+    public FishTank06(String lastWaterChange, String waterQuality){
+        this.lastWaterChange = lastWaterChange;
+        this.waterQuality = waterQuality;
+    }
+    public enum waterQuality{
+        perfekt, godt, okay, dårlig
+    }
+
+    public void changeWater(Scanner scanner){
+        lastWaterChange = LocalDateTime.now().toString();
+        System.out.println(lastWaterChange + "enter comment:");
+        String comment = scanner.nextLine();
+    }
 
 
     //TODO: en veil fisk h
 
 }
-public static void main(String[] args){
-    fishTank();
- 
 
-}
-public class fishTank{
 
-}
